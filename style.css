@@ -14,7 +14,6 @@
 }
 
 body {
-    /* height: 100vh; */
     background-color: var(--paleblue);
     background-image: url("images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
@@ -23,7 +22,7 @@ body {
 main {
     background-color: white;
     border-radius: 10px;
-    margin: 100px auto;
+    margin: 130px auto;
     height: 600px;
     width: 400px;
     text-align: center;
@@ -132,7 +131,6 @@ li p {
     font-weight: 700;
     letter-spacing: 1px;
     padding: 20px;
-    margin: 5px auto;
     font-size: 0.6em;
     background-color: white;
 }
