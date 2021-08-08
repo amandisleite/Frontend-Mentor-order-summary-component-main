@@ -56,43 +56,44 @@ h1 {
     width: 80%;
     background-color: var(--verypaleblue);
     border-radius: 10px;
-}
-
-ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
-}
-
-li {
-    list-style: none;
+    align-items: center;  
     text-align: left
 }
 
-li h3 {
+.plan__itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.plan__itens h3 {
     font-weight: 900;
     color: var(--darkblue);
     font-size: 0.8em;
     padding-bottom: 4px;
 }
 
-li p {
+.plan__itens p {
     font-weight: 500;
     color: var(--desaturatedblue);
     font-size: 0.8em;
 }
 
-#list__text {
-    padding-right: 20px;
+.plan__itens__text {
+    padding-left: 20px;
 }
 
-#change {
+.change {
+    font-weight: 700;
     color: var(--brightblue);
     text-decoration: underline;
     cursor: pointer;
+    font-size: 0.8em;
 }
 
-#change:hover {
+.change:hover {
     color: hsl(245, 75%, 52%, 70%);
     text-decoration: none;
 }
@@ -118,7 +119,7 @@ li p {
 .button__cancel {
     font-weight: 900;
     font-size: 0.8em;
-    color: var(--brightblue);
+    color: var(--desaturatedblue);
     cursor: pointer;
 }
 
@@ -143,4 +144,75 @@ li p {
 
 .attribution a:hover {
     color:var(--desaturatedblue);
+}
+
+@media only screen and (max-width: 375px) {
+    
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: fixed;
+    }
+    
+    main {
+        margin: 50px auto;
+        height: 570px;
+        width: 330px;
+    }
+
+    .image img {
+        width: 330px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .attribution {
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 20px;
+        font-size: 0.4em;
+        background-color: white;
+    }
+
+    h1 {
+        font-weight: 900;
+        color: var(--darkblue);
+        font-size: 1.35em;
+        margin: 30px auto;
+        margin-bottom: 20px;
+    }
+    
+    #main__paragraph {
+        margin: 10px 45px;
+        line-height: 1.7em;
+        font-size: 0.9em;
+    }
+    
+    .plan {
+        width: 85%;
+    }
+
+    .plan__itens h3 {
+        font-size: 0.9em;
+
+    }
+    
+    .plan__itens p {
+        font-size: 0.9em;
+    }
+
+    .change {
+        font-size: 0.8em;
+    }
+
+    .button__payment {
+        width: 85%;
+        font-size: 0.9em;
+        margin: 25px auto;
+    }
+
+    .button__cancel {
+        font-size: 0.9em;
+    }
 }
