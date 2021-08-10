@@ -68,7 +68,7 @@ h1 {
     align-items: center;  
 }
 
-.plan__itens h3 {
+.plan__itens h2 {
     font-weight: 900;
     color: var(--darkblue);
     font-size: 0.8em;
@@ -193,7 +193,7 @@ h1 {
         width: 85%;
     }
 
-    .plan__itens h3 {
+    .plan__itens h2 {
         font-size: 0.9em;
 
     }
